@@ -26,3 +26,18 @@
 		float: right;
 	}
 }
+
+/*barre de navigation*/
+header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header li {
+	display: inline-block;
+}
+
+header img {
+	height: 100px;
+}
