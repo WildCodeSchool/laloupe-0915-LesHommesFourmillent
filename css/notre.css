@@ -1,0 +1,28 @@
+.pied_de_page  {
+	max-height: 30px;
+	background-color: #EBE4E4;
+	position: relative;
+	text-align: center; left: 0;
+}
+.logo_facebook {
+	height: 20px;
+	width: 20px;
+	position: absolute; right: 0;
+}
+#realisation{
+	display: block;
+	position: absolute;
+}
+
+@media (max-width: 500px) {
+	#realisation, .logo_facebook{
+		position: static;
+		font-size: 12px;
+	}
+	#realisation{
+		float: left;
+	}
+	.logo_facebook{
+		float: right;
+	}
+}
