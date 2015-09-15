@@ -63,6 +63,10 @@ header li {
 	height: 200px;
 }
 
+.lhf a:hover {
+	content: "Les hommes fourmillent"
+}
+
 .ic {
 	background: url(../imgs/intelligence_collective.jpg) no-repeat;
 	background-size: 100% 100%;
