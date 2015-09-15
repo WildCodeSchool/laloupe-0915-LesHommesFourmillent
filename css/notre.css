@@ -1,3 +1,10 @@
+/* Page d'accueil*/
+#avecfond {
+	background-image: url("../imgs/couverture2.jpg");
+	background-color: blue;
+}
+
+
 .pied_de_page  {
 	max-height: 30px;
 	background-color: #EBE4E4;
@@ -40,4 +47,8 @@ header li {
 
 header img {
 	height: 100px;
+}
+
+.navbar{
+	;
 }
