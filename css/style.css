@@ -1,0 +1,72 @@
+
+
+body { 
+    background: #dc5214;
+    margin:0;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+}
+
+#usine {
+    margin: 0 auto;
+    display: table;
+    position: relative;
+}
+
+#img-usinebulle {
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+#img-bulle {
+    width: 100%;
+}
+
+#images figure img {
+    width: 100%;
+    height: 50%;
+}
+
+#images {
+    position: absolute;
+    bottom: 6%;
+    left: 20%;
+    width: 60%;
+    display: -webkit-inline-box;
+}
+
+.bulle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 70%;
+    margin-left: -45%;
+}
+
+figure {
+  overflow: hidden;
+  position: relative;
+  width: 15%;
+  display: inline-block;
+  margin: 0;
+  margin-right: 3%;
+}
+
+figure figcaption {
+  background: rgba(240, 82, 20, .7);
+  bottom: -100%;
+  color: white;
+  padding: 7%;
+  position: absolute;
+  transition: bottom .7s;
+  text-shadow: 0.5px 0.5px black;
+  width: 90%;
+  font-size: 80%;
+}
+
+figure:hover figcaption {
+  bottom: 0;
+}
