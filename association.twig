@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{%include 'head.twig' %}
+<body>
+	<!--div class="fond"-->
+		{% include 'navbar.twig' %}
+
+
+		<div class="row">
+
+  		
+
+        <div class="col-md-10">
+
+        {% setcontent association="/page/association" %}
+        {{page.body}}		
+  
+        </div>
+
+          {%include'news.twig'%}
+  	   </div>
+    </div>
+</div>
+
+
+
+	
+		{%include'footer.twig'%}
+	<!--/div-->
+</body>
+</html>

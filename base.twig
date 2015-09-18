@@ -1,21 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" href="bootstrap.min.css"/>
-    <link rel="stylesheet" href="bootstrap.icon-large.min.css"/>
-    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"-->
-    <link rel="stylesheet" href="css/notre.css"/>
-    <script src="js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-	
-	<title>Les Hommes Fourmillent</title>
-</head>
+{%include 'head.twig' %}
 <body>
 	<header class="navbar">
-		<?php
-			include("navbar.php")
-		?> 
+		{%include'navbar.twig'%}
 	</header>
 
 
@@ -23,9 +11,9 @@
 			<h3>Il était une fois ta mère en slip</h3>
 			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</p>
 		</div>
-		<?php
-			include("news.php")
-		?>
+
+		{%include'news.twig'%}
+
 		<div class="ensemble">
 			<div class="fresh">
 				<div class="barre">
@@ -65,9 +53,7 @@
 			</div>
 	</div>
 	<footer class="pied_de_page">
-		<?php
-			include("footer.php")
-		?>
+		{%include'footer.twig'%}
 	</footer>
 	
 </body>
