@@ -1,101 +1,315 @@
+/*Page d'accueil*/
 
 
 
-.pied_de_page  {
-	max-height: 30px;
-	background-color: #EBE4E4;
-	position: relative;
-	text-align: center; left: 0;
-}
-.logo_facebook {
-	height: 20px;
-	width: 20px;
-	position: absolute; right: 0;
-}
-#realisation{
-	display: block;
-	position: absolute;
-}
 
-@media (max-width: 500px) {
-	#realisation, .logo_facebook{
-		position: static;
-		font-size: 12px;
-	}
-	#realisation{
-		float: left;
-	}
-	.logo_facebook{
-		float: right;
-	}
-}
 
-/*barre de navigation*/
+
+
+
+/*Barre de menu*/
+
 header ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 header li {
-	display: inline-block;
+    display: inline-block;
 }
 
-/*header img {
-	;
-}*/
+.entete .navbar{
+        display: inline-block;
+}
 
-/*.entete {
-	float: left;
-}*/
+.logo {
+    float: left;
+}
 
 .navbar {
-	float: right;
+    float: left;
+    top: 45px;
+    left: 5px;
 }
 .navbar img {
-	height: 100px;
-	float: left;
+    height: 100px;
+    float: left;
+}
+.navbar li {
+    border-radius: 20px;
+}
+.navbar p {
+    font-size: 10px;
+    text-align: center;
 }
 
 .lhf {
-	background: url(../imgs/logo_v-o1.jpg) no-repeat;
-	background-size: 100% 100%;
-	height: 200px;
+    background: url(../imgs/logo.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 35px;
+    height: 150px;
+    width: 300px;
 }
 
-.lhf a:hover {
-	content: "Les hommes fourmillent"
+/*.lhf a:hover {
+    content: "Les hommes fourmillent"
 }
-
+*/
 .ic {
-	background: url(../imgs/intelligence_collective.jpg) no-repeat;
-	background-size: 100% 100%;
-	height: 100px;
+    background: url(../imgs/intelligence_collective.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    width: 100px;
 }
 
 .is {
-	background: url(../imgs/ingenierie_sociale.jpg) no-repeat;
-	background-size: 100% 100%;
-	height: 100px;
-}
+    background: url(../imgs/ingesociale.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    width: 100px;
+    }
 
 .ess {
-	background: url(../imgs/solidarite.jpg) no-repeat;
-	background-size: 100% 100%;
-	height: 100px;
-}
+    background: url(../imgs/solidarite.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    width: 100px;}
 
 .en {
-	background: url(../imgs/arbre_numerique.jpg) no-repeat;
-	background-size: 100% 100%;
-	height: 100px;
-}
+    background: url(../imgs/arbre_numerique.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100px;
+    width: 100px;}
 
 .dd {
-	background: url(../imgs/Arbre.png) no-repeat;
-	background-size: 100% 100%;
-	height:100px;
+    background: url(../imgs/arbre.jpg) no-repeat;
+    background-size: 100% 100%;
+    height:100px;
+    width: 100px;
+}
+
+.item:hover {
+    background: transparent;
+}
+.item a {
+    opacity: 0;
+    padding-top: 45px;
+    display: block;
+}
+.item:hover a {
+    opacity:1;
+}
+
+/* Corps de page*/
+
+
+body {
+    width:80%;
+    margin:auto;
+    background: url(../imgs/usinesanslogo.jpg) no-repeat fixed;
+    background-color: #fdf5f1;
+    background-size: 100% 100%;
+
+    }
+.article{
+    border: 3px solid black;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'Open Sans', serif;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 24px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color:#98c010;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 22px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color:#ffffff;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color:#ffffff;
+}
+
+p {
+    text-align: justify;
 }
 
 
 
+.presentation {
+		float:left;
+		display:inline-block;
+		width:65%;
+		padding-top:0;
+		padding-left:5%;
+		padding-right:5%;
+        padding-botto
+	}
+
+	.agenda {
+		float:right;
+		display:inline;
+		width:20%;
+		height:700px;
+        border:solid 1px white;
+        margin-top:15px;-->
+	}
+
+        .news_content{
+            width:90%;
+            margin:auto;
+        }
+
+	.ensemble {
+		float:left;
+		width:75%;
+		padding:1%;
+		margin-bottom:10px;
+		border:solid 1px white;
+		display:inline-block;
+	}
+		.fresh {
+			padding:5px;
+			margin:2px;
+			float:left;
+			width:48%;
+			}
+
+		.stat {
+			padding:5px;
+			margin:2px;
+			float:right;
+			width:48%;
+			}
+
+
+.barre {
+        margin-top:0;
+        padding-top:0;
+        width:100%;
+        line-height:35px;
+        background-color:#ffffff;
+        text-align: center;
+        }
+
+p {
+    font-family:Verdana;
+    font-size:14px;
+    color:#580634;
+}
+
+
+/* "bolt_widget" is the default container for widgets in Bolt. */
+
+.bolt_widget {
+    background: #f2f2f2;
+    border: solid 1px #e6e6e6;
+    margin-bottom: 8px;
+    padding: 6px;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+}
+
+/* Styles for 'responsive video embeds' --------------------------------  */
+
+.responsive-video {
+    padding-top: 25px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin: 0 0 1em 0;
+}
+.responsive-video iframe {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+}
+
+
+/* Styles for 'max-width 479px' -----------------------------------------  */
+
+/*barre de navigation*/
+
+/*header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}*/
+
+
+
+/* Footer */
+
+.pied_de_page  {
+    max-height: 30px;
+    background-color: #EBE4E4;
+    position: relative;
+    text-align: center;
+    left: 0;
+}
+.logo_facebook {
+    background: url(../imgs/facebook.gif) no-repeat;
+    background-size: 100% 100%;
+    height: 20px;
+    width: 20px;
+    position: absolute; right: 0;
+}
+#realisation{
+    display: block;
+    position: absolute;
+}
+
+
+
+/*   Responsive   */
+
+@media (max-width: 700px){
+    .navbar li {
+        height: 80px;
+        width: 80px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    .navbar li {
+        height: 50px;
+        width: 50px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 120px;
+    }
+
+    #realisation, .logo_facebook{
+        position: static;
+        font-size: 12px;
+    }
+    #realisation{
+        float: left;
+    }
+    .logo_facebook{
+        float: right;
+    }
+}
